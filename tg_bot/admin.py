@@ -18,7 +18,7 @@ class ClientAdmin(admin.ModelAdmin):
     list_display = ("name",
                     "telegram_id",
                     "subscription_estimate_date",
-                    "payment_comfirmation_request")
+                    "payment_confirmation_request")
     fields = ("telegram_id", "name")
 
 
