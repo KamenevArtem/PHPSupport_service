@@ -19,7 +19,7 @@ class Client(models.Model):
     subscription_estimate_date = models.DateTimeField(
                                  verbose_name="Дата окончания подписки",
                                  auto_now_add=True)
-    payment_comfirmation_request = models.BooleanField(
+    payment_confirmation_request = models.BooleanField(
                                  verbose_name="Запрос на подтверждение оплаты",
                                  default=False)
 

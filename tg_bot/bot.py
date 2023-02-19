@@ -25,7 +25,7 @@ class ClientPaymentConfirmationFilter(telebot.SimpleCustomFilter):
     def check(message):
         try:
             Client.objects.get(telegram_id=message.from_user.id,
-                               payment_comfirmation_request=True)
+                               payment_confirmation_request=True)
             return True
         except Client.DoesNotExist:
             return False
